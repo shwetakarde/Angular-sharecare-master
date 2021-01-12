@@ -92,9 +92,12 @@
               "src/assets"
             ],
             "styles": [
+              "Angular-sharecare-master/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "Angular-sharecare-master/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         },
         "lint": {
