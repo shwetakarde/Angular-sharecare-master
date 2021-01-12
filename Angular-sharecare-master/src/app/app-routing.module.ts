@@ -6,6 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { IndexpageComponent } from './indexpage/indexpage.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component'
 import { AdminhomepageComponent } from './adminhomepage/adminhomepage.component';
+import { UserlistComponent } from './adminhomepage/userlist/userlist.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/indexpage', pathMatch: 'full' },
@@ -14,7 +16,14 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'indexpage', component: IndexpageComponent },
   { path: 'adminlogin', component: AdminloginComponent },
-  { path: 'adminhomepage', component: AdminhomepageComponent }
+  {
+    path: 'adminhomepage', component: AdminhomepageComponent
+
+  },
+
+  { path: 'userlist', component: UserlistComponent }
+
+
 ];
 
 @NgModule({

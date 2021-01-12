@@ -11,6 +11,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { IndexpageComponent } from './indexpage/indexpage.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { AdminhomepageComponent } from './adminhomepage/adminhomepage.component';
+import { UserlistComponent } from './adminhomepage/userlist/userlist.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AdminhomepageComponent } from './adminhomepage/adminhomepage.component'
     HomepageComponent,
     IndexpageComponent,
     AdminloginComponent,
-    AdminhomepageComponent
+    AdminhomepageComponent,
+    UserlistComponent,
   ],
   imports: [
     BrowserModule,
