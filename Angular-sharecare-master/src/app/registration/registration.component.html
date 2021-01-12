@@ -1,0 +1,144 @@
+<p>registration works!</p>
+
+<div class="container-fluid my-3">
+          <div class="row justify-content-around">
+                    <div class="col-md-7 bg-light shadow px-4 pt-4">
+                              <h4 class="display-4 ">
+                                        <i class="fa fa-user-plus"></i>User Sign Up
+                              </h4>
+                              <hr>
+                              <form #regFormControl="ngForm">
+                                        <small class="text-danger">
+                                                  {{msg}}
+                                        </small>
+                                        <fieldset>
+
+
+                                                  <div class="row">
+                                                            <div class="form-group col-md-6"
+                                                                      [class.has-success]="firstName.valid">
+                                                                      <label for="firstName" class="control-label">First
+                                                                                Name</label>
+                                                                      <input type="text" [(ngModel)]="user.firstName"
+                                                                                name="firstName" id="firstName"
+                                                                                class="form-control"
+                                                                                placeholder="Enter first name"
+                                                                                #firstName="ngModel" required
+                                                                                pattern="^[a-zA-Z\s]+$">
+                                                                      <small class="text-danger"
+                                                                                *ngIf="email.errors.pattern">Enter
+                                                                                valid First Name
+                                                                      </small>
+                                                                      <span class="help-block text-danger"
+                                                                                *ngIf="firstName.invalid && firstName.touched">
+                                                                                First Name is required
+                                                                      </span>
+
+                                                            </div>
+
+                                                            <div class="form-group col-md-6"
+                                                                      [class.has-success]="lastName.valid">
+                                                                      <label for="lastName" class="control-label">Last
+                                                                                Name</label>
+                                                                      <input type="text" [(ngModel)]="user.lastName"
+                                                                                name="lastName" id="lastName"
+                                                                                class="form-control"
+                                                                                placeholder="Enter last name"
+                                                                                #lastName="ngModel" required
+                                                                                pattern="^[a-zA-Z\s]+$">
+                                                                      <span class="help-block text-danger"
+                                                                                *ngIf="lastName.invalid && lastName.touched">
+                                                                                Last Name is required
+                                                                      </span>
+                                                                      <small class="text-danger"
+                                                                                *ngIf="email.errors.pattern">Enter
+                                                                                valid Last Name
+                                                                      </small>
+
+                                                            </div>
+
+                                                            <div class="form-group col-md-6"
+                                                                      [class.has-success]="email.valid">
+                                                                      <label for="email" class="control-label">Email
+                                                                                Id</label>
+                                                                      <input type="email" [(ngModel)]="user.email"
+                                                                                name="email" id="email"
+                                                                                class="form-control"
+                                                                                placeholder="Enter Email Id"
+                                                                                #email="ngModel" required>
+                                                                      <span class="help-block text-danger"
+                                                                                *ngIf="email.invalid && email.touched">
+                                                                                Email-Id is required
+                                                                      </span>
+                                                            </div>
+                                                  </div>
+                                                  <div class="row">
+                                                            <div class="form-group col-md-6"
+                                                                      [class.has-success]="password.valid">
+                                                                      <label for="password"
+                                                                                class="control-label">Password</label>
+                                                                      <input type="password" [(ngModel)]="user.password"
+                                                                                name="password" id="password"
+                                                                                class="form-control"
+                                                                                placeholder="Enter Password"
+                                                                                #password="ngModel" required minlength=3
+                                                                                maxlength=8>
+                                                                      <span class="help-block text-danger"
+                                                                                *ngIf="password.hasError('required') && password.touched">
+                                                                                Password is required
+                                                                      </span>
+                                                                      <span class="help-block text-danger"
+                                                                                *ngIf="password.hasError('minlength')">
+                                                                                password is too short
+                                                                      </span>
+                                                                      <span class="help-block text-danger"
+                                                                                *ngIf="password.hasError('maxlength')">
+                                                                                password is too large
+                                                                      </span>
+                                                            </div>
+
+                                                            <div class="form-group col-md-6">
+                                                                      <label for="cpassword">Confirm Password</label>
+                                                                      <input type="cpassword" name="cpassword"
+                                                                                id="cpassword" class="form-control"
+                                                                                placeholder="Re-Enter Password"
+                                                                                aria-describedby="PasswordlhelpId"
+                                                                                required>
+                                                            </div>
+                                                  </div>
+
+                                                  <div class="form-group col-md-6" [class.has-success]="phoneNo.valid">
+                                                            <label for="phoneNo" class="control-label">Contact
+                                                                      Number</label>
+                                                            <input type="text" class="form-control"
+                                                                      [(ngModel)]="user.phoneNo" name="phoneNo"
+                                                                      id="phoneNo" placeholder="Enter contact number"
+                                                                      #phoneNo="ngModel" required>
+                                                            <span class="help-block text-danger"
+                                                                      *ngIf="phoneNo.invalid && phoneNo.touched">
+                                                                      Contact Number is required
+                                                            </span>
+
+                                                  </div>
+
+
+
+
+                                                  <div class="form-group ">
+                                                            <button type="submit" class="btn btn-success"
+                                                                      [disabled]="regFormControl.invalid"
+                                                                      (click)="registerNow()">Sign Up</button>
+
+                                                            <button type="reset" class="btn btn-danger">Reset</button>
+                                                  </div>
+                                                  <p>Already have an account? <span><a href="/login">Login</a></span>
+                                                  </p>
+                                        </fieldset>
+                              </form>
+
+
+
+
+                    </div>
+          </div>
+</div>

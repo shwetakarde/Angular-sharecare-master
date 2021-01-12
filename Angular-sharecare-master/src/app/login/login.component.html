@@ -1,0 +1,54 @@
+<div class="container">
+      <h2>Sign-In Form</h2>
+      <form #loginform="ngForm" (ngSubmit)="loginUser()">
+            <small class="text-danger">{{msg}}</small>
+            <div class="form-group" [class.has-success]="email.valid">
+                  <label class="control-label col-sm-2" for="email">Email:</label>
+                  <div class="col-sm-10">
+                        <input type="email" class="form-control" placeholder="Enter email" name="email"
+                              [(ngModel)]="user.email" required pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"
+                              #email="ngModel">
+
+                        <!-- <small class="text-danger" [class.d-none]="email.valid || email.untouched">Email Id is required field</small> -->
+                        <div *ngIf="email.errors && (email.invalid && email.touched)">
+                              <small class="text-danger" *ngIf="email.errors.required">Email id is
+                                    required field</small>
+                              <small class="text-danger" *ngIf="email.errors.pattern">Enter the
+                                    valid Email ID</small>
+                        </div>
+
+                  </div>
+            </div>
+            <div class="form-group" [class.has-success]="email.valid">
+                  <label class="control-label col-sm-2" for="pwd">Password:</label>
+                  <div class="col-sm-10">
+                        <input type="password" class="form-control" placeholder=" Enter password" name="password"
+                              [(ngModel)]="user.password" required #password="ngModel"
+                              [class.is-invalid]="password.invalid && password.touched" minlength=3 maxlength=10>
+                        <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password
+                              is required field</small>
+                        <span class="help-block text-danger" *ngIf="password.hasError('minlength')">
+                              password is too short
+                        </span>
+                        <span class="help-block text-danger" *ngIf="password.hasError('maxlength')">
+                              password is too large
+                        </span>
+                  </div>
+            </div>
+            <!-- <div class="form-group">
+                              <div class="col-sm-offset-2 col-sm-10">
+                                        <div class="checkbox">
+                                                  <label><input type="checkbox" name="remember"> Remember me</label>
+                                        </div>
+                              </div>
+                    </div> -->
+            <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-info" [disabled]="loginform.invalid">LogIn</button>
+                        <button type="reset" class="btn btn-danger">Reset</button>
+                  </div>
+            </div>
+            <p>Dont have an account? <span><a href="/registration">Signup</a></span></p>
+
+      </form>
+</div>
