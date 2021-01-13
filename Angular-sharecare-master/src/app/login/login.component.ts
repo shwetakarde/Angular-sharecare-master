@@ -15,28 +15,37 @@ export class LoginComponent implements OnInit {
 
   user = new User();
   msg = '';
+
   constructor(private _service: RegistrationService, private _router: Router) { }
 
   ngOnInit(): void {
   }
 
   loginUser() {
-    this._service.loginUserFromRemote(this.user).subscribe(
-      data => {
-        sessionStorage.setItem('userSesId', data.userSesId);
-        console.log("response received");
-        this._router.navigate(['/homepage'])
 
-      },
-      error => {
+    if (this.user.email == "admin@gmail.com" && this.user.password == "admin") {
+      this._router.navigate(['/adminhomepage'])
 
-        console.log("exception occured");
-        this.msg = "Invalid  Credentials , Please enter valid email id And password";
-      }
-    )
+    }
+    else {
+      this._service.loginUserFromRemote(this.user).subscribe(
+        data => {
+          // sessionStorage.setItem('userSesId', data.userSesId);
+          console.log(data);
+          console.log("response received");
+          this._router.navigate(['/homepage'])
+
+        },
+        error => {
+
+          console.log("exception occured");
+          this.msg = "Invalid  Credentials , Please enter valid email id And password";
+        }
+      )
+    }
   }
 
-  registration() {
-    this._router.navigate(['/registration'])
-  }
+  // registration() {
+  //   this._router.navigate(['/registration'])
+  // }
 }

@@ -8,7 +8,6 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component'
 import { AdminhomepageComponent } from './adminhomepage/adminhomepage.component';
 import { UserlistComponent } from './adminhomepage/userlist/userlist.component';
 
-
 const routes: Routes = [
   { path: '', redirectTo: '/indexpage', pathMatch: 'full' },
   { path: 'homepage', component: HomepageComponent },
@@ -17,12 +16,11 @@ const routes: Routes = [
   { path: 'indexpage', component: IndexpageComponent },
   { path: 'adminlogin', component: AdminloginComponent },
   {
-    path: 'adminhomepage', component: AdminhomepageComponent
-
+    path: 'adminhomepage', component: AdminhomepageComponent,
+    children: [
+      { path: 'userlist', component: UserlistComponent }
+    ]
   },
-
-  { path: 'userlist', component: UserlistComponent }
-
 
 ];
 

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/user';
 import { AdminserviceService } from '../adminservice.service';
+
 @Component({
   selector: 'app-userlist',
   templateUrl: './userlist.component.html',
@@ -8,7 +10,7 @@ import { AdminserviceService } from '../adminservice.service';
 export class UserlistComponent implements OnInit {
 
   title = 'User List';
-
+  user = new User();
   public alluser;
   constructor(private _adminservice: AdminserviceService) { }
 
@@ -23,6 +25,22 @@ export class UserlistComponent implements OnInit {
       error => {
         console.log("Exception occured");
       })
+  }
+
+  reloadData() {
+    this.alluser = this._adminservice.getuser();
+  }
+
+  deleteUser(id: Number) {
+    this._adminservice.deleteUser(id).subscribe(
+      (data) => {
+        console.log(data);
+        this.reloadData();
+      },
+      error => {
+        console.log(error);
+      }
+    )
   }
 
 }

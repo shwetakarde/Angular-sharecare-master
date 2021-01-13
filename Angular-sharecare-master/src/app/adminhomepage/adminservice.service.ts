@@ -9,9 +9,14 @@ import { User } from '../user';
 export class AdminserviceService {
 
   constructor(private _http: HttpClient) { }
-
+  private url = "http://localhost:8081";
 
   public getuser(): Observable<any> {
     return this._http.get("http://localhost:8081/userlist");
   }
+
+  public deleteUser(id: Number): Observable<any>{
+    return this._http.delete("${this.url}/${id}", { responseType: 'text' });
+  }
+
 }

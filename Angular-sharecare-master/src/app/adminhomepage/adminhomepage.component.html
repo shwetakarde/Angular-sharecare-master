@@ -1,12 +1,10 @@
-<p>adminhomepage works!</p>
-
-
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
 
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                  <a [routerLink]="['/userlist']" routerLinkActive="active" class="nav-item nav-link text-primary">User
+                  <a [routerLink]="['/adminhomepage/userlist']" routerLinkActive="active"
+                        class="nav-item nav-link text-primary">User
                         List </a>
                   <a class="nav-item nav-link text-primary" href="#">Book List</a>
                   <a class="nav-item nav-link text-primary" href="#">Logout</a>
@@ -14,3 +12,4 @@
             </div>
       </div>
 </nav>
+<router-outlet></router-outlet>
