@@ -11,4 +11,7 @@ export class AdminserviceService {
   constructor(private _http: HttpClient) { }
 
 
+  public getuser(): Observable<any> {
+    return this._http.get("http://localhost:8081/userlist");
+  }
 }

@@ -1,3 +1,60 @@
 <h1>userlist works!</h1>
-kkkk
-hukh
+
+
+<section class="dashboard-wrap mtb-40">
+      <div class="container">
+            <div class="body-content">
+                  <div class="row">
+                        <div class="col-md-12">
+
+                              <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+                                    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                                          <div class="navbar-nav">
+                                                <a [routerLink]="['/userlist']" routerLinkActive="active"
+                                                      class="nav-item nav-link text-primary">User
+                                                      List </a>
+                                                <a class="nav-item nav-link text-primary" href="#">Book List</a>
+                                                <a class="nav-item nav-link text-primary" href="#">Logout</a>
+
+                                          </div>
+                                    </div>
+                              </nav>
+                        </div>
+                        <div class="col-md-9">
+                              <div class="dash-right">
+                                    <div class="dash-header">
+                                          <div class="dash-title">
+                                                <h1>{{title}}</h1>
+                                          </div>
+
+                                    </div>
+                                    <table class="table table-bordered table-striped">
+                                          <tr>
+                                                <th>#ID</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Email Id</th>
+                                                <th>Contact No</th>
+                                          </tr>
+                                          <tr *ngFor="let user of alluser">
+                                                <td>{{user.id}}</td>
+                                                <td>{{user.firstName}}</td>
+                                                <td>{{user.lastName}}</td>
+                                                <td>{{user.email}}</td>
+                                                <td>{{user.phoneNo}}</td>
+
+                                                <td class="action">
+                                                      <a [routerLink]="['#', user.Id]"
+                                                            class="btn btn-info btn-sm">Edit</a>
+                                                      <a (click)="onDelete(user.Id)"
+                                                            class="btn btn-danger btn-sm">Delete</a>
+                                                </td>
+                                          </tr>
+                                    </table>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+</section>
