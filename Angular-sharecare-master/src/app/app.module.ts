@@ -12,6 +12,9 @@ import { IndexpageComponent } from './indexpage/indexpage.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { AdminhomepageComponent } from './adminhomepage/adminhomepage.component';
 import { UserlistComponent } from './adminhomepage/userlist/userlist.component';
+import { BooklistComponent } from './adminhomepage/booklist/booklist.component';
+import { FeedbacklistComponent } from './adminhomepage/feedbacklist/feedbacklist.component';
+import { UpdatebookComponent } from './homepage/updatebook/updatebook.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { UserlistComponent } from './adminhomepage/userlist/userlist.component';
     AdminloginComponent,
     AdminhomepageComponent,
     UserlistComponent,
+    BooklistComponent,
+    FeedbacklistComponent,
+    UpdatebookComponent,
   ],
   imports: [
     BrowserModule,

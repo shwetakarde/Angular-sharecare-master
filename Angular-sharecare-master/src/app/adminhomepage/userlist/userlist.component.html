@@ -5,7 +5,6 @@
                         <div class="col-md-12">
 
                               <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-
                                     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                                           <div class="navbar-nav">
                                                 <a [routerLink]="['/userlist']" routerLinkActive="active"
@@ -21,11 +20,11 @@
                               <div class="dash-right">
                                     <div class="dash-header">
                                           <div class="dash-title">
-                                                <h1>{{title}}</h1>
+                                                <h1 style="color: brown;text-align: center;">{{title}}</h1>
                                           </div>
 
                                     </div>
-                                    <table class="table table-bordered table-striped">
+                                    <table class="table table-bordered table-striped ">
                                           <tr>
                                                 <th>#ID</th>
                                                 <th>First Name</th>
@@ -40,10 +39,9 @@
                                                 <td>{{user.email}}</td>
                                                 <td>{{user.phoneNo}}</td>
 
-                                                <td class="action">
-                                                      <a [routerLink]="['#', user.Id]"
-                                                            class="btn btn-info btn-sm">Edit</a>
-                                                      <a (click)="onDelete(user.Id)"
+                                                <td>
+
+                                                      <a (click)="deleteUser(user.id)"
                                                             class="btn btn-danger btn-sm">Delete</a>
                                                 </td>
                                           </tr>
