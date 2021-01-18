@@ -94,3 +94,123 @@
       </form>
       <br>
 </div>
+<!-- Nidhi code -->
+
+<!-- <div class="container signup-container justify-content-center">
+      <div class="row">
+
+            <div class="col-md-6 signup-form-1 d-flex justify-content-center">
+                  <img src="assets/daria-nepriakhina-xY55bL5mZAM-unsplash.jpg" alt="bg img" style="width:100%; ">
+
+            </div>
+            <div class="col-md-6 signup-form-2">
+                  <h3>Register Here!!!</h3>
+                  <form #registerForm="ngForm">
+                        <div class="form-group">
+                              <div><b>First Name</b></div>
+                              <input name="firstName" class="form-control" placeholder="First Name" id="firstName"
+                                    type="text" [(ngModel)]="user.firstName" required pattern="^[a-zA-Z_]+$"
+                                    title="Only Characters are allowed" required #userFirstName="ngModel"
+                                    [class.is-invalid]="userFirstName.invalid && userFirstName.touched"
+                                    [class.is-valid]="userFirstName.valid && userFirstName.touched">
+
+
+                              <div *ngIf="userFirstName.errors && (userFirstName.invalid && userFirstName.touched)">
+                                    <small class="text-white" *ngIf="userFirstName.errors.required">First name is
+                                          required</small>
+                                    <small class="text-white" *ngIf="userFirstName.errors.pattern">Enter Valid First
+                                          name</small>
+                              </div>
+                        </div>
+
+                        <div class="form-group">
+                              <div><b>Last Name</b></div>
+                              <input name="lastName" class="form-control" placeholder="Last Name" id="lastName"
+                                    type="text" [(ngModel)]="user.lastName" required pattern="^[a-zA-Z_]+$"
+                                    title="Only Characters are allowed" required #userLastName="ngModel"
+                                    [class.is-invalid]="userLastName.invalid && userLastName.touched"
+                                    [class.is-valid]="userLastName.valid && userLastName.touched">
+
+
+                              <div *ngIf="userLastName.errors && (userLastName.invalid && userLastName.touched)">
+                                    <small class="text-white" *ngIf="userLastName.errors.required">Last name is
+                                          required</small>
+                                    <small class="text-white" *ngIf="userLastName.errors.pattern">Enter Valid Last
+                                          name</small>
+                              </div>
+                        </div> -->
+
+
+<!-- <div class="form-group">
+                      <div><b>User Name</b></div>
+                      <input name="userName" class="form-control" placeholder="User Name" id="userName" type="text"
+                          [(ngModel)]="user.userName" required pattern="^[a-zA-Z_]+$" title="Only Characters are allowed"
+                          required #userUserName="ngModel"
+                          [class.is-invalid]="userUserName.invalid && userUserName.touched"
+                          [class.is-valid]="userUserName.valid && userUserName.touched">
+  
+  
+                      <div *ngIf="userUserName.errors && (userUserName.invalid && userUserName.touched)">
+                          <small class="text-white" *ngIf="userUserName.errors.required">User name is
+                              required</small>
+                          <small class="text-white" *ngIf="userUserName.errors.pattern">Enter Valid User
+                              name</small>
+                      </div>
+                  </div> -->
+
+
+
+
+
+<!-- <div class="form-group">
+                      <div><b>Confirm Password</b></div>
+                      <input name="cnfPassword" class="form-control" placeholder="Confirm Password" id="cnfPassword"
+                          type="password" [(ngModel)]="user.cnfPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                          required minlength="8"
+                          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                          required #usercnfPassword="ngModel"
+                          [class.is-invalid]="usercnfPassword.invalid && usercnfPassword.touched"
+                          [class.is-valid]="usercnfPassword.valid && usercnfPassword.touched">
+  
+  
+                      <div *ngIf="usercnfPassword.errors && (usercnfPassword.invalid && usercnfPassword.touched)">
+                          <small class="text-white" *ngIf="usercnfPassword.errors.required">Confirm Password is
+                              required</small>
+                          <small class="text-white" *ngIf="usercnfPassword.errors.pattern">Enter Valid Confirm
+                              Password</small>
+                          <small class="text-white"
+                              [class.d-none]="(usercnfPassword.value == user.password.value) ||usercnfPassword.untouched">
+                              and Password and Confirm password must be same</small>
+                      </div>
+  
+                  </div> -->
+
+<!-- <div class="row form-group">
+
+                              <div class="col-6">
+                                    <a href="login">Already registered user</a>
+                              </div>
+                        </div>
+
+
+                        <div class=" row form-group">
+                              <div class="form-group">
+                                    <button class="btn btn-outline-warning text-light" type="submit"
+                                          [disabled]="registerForm.form.invalid" (click)="register()"
+                                          style="color: white">REGISTER</button>
+                              </div>
+                              <div class="form-group">
+                                    <button class="btn btn-outline-warning text-light" type="reset"><a
+                                                style="color: white;" href="registration">RESET</a></button>
+                              </div>
+                        </div> -->
+
+<!-- <div class="text-left mb-3">
+                      <button [disabled]="registerFrom.form.invalid" type="submit" class="btn">Register</button>
+                  </div> -->
+
+<!-- </form>
+
+            </div>
+      </div>
+</div> -->

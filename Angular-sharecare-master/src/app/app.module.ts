@@ -15,6 +15,9 @@ import { UserlistComponent } from './adminhomepage/userlist/userlist.component';
 import { BooklistComponent } from './adminhomepage/booklist/booklist.component';
 import { FeedbacklistComponent } from './adminhomepage/feedbacklist/feedbacklist.component';
 import { UpdatebookComponent } from './homepage/updatebook/updatebook.component';
+import { CreativityComponent } from './homepage/creativity/creativity.component';
+import { CreativitygalleryComponent } from './homepage/creativitygallery/creativitygallery.component';
+//import { UploadbookComponent } from './homepage/uploadbook/uploadbook.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { UpdatebookComponent } from './homepage/updatebook/updatebook.component'
     BooklistComponent,
     FeedbacklistComponent,
     UpdatebookComponent,
+    CreativityComponent,
+    CreativitygalleryComponent,
+    // UploadbookComponent,
   ],
   imports: [
     BrowserModule,

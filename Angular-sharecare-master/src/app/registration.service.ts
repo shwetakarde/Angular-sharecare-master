@@ -10,8 +10,6 @@ export class RegistrationService {
 
   constructor(private _http: HttpClient) { }
 
-
-
   public loginAdminFromRemote(admin: Admin): Observable<any> {
     return this._http.post<any>("http://localhost:8081/adminlogin", admin)
   }
