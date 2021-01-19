@@ -22,16 +22,17 @@
                 <br>
                 <div class="form-group">
                     <label>Payment Mode</label>
-                    <select class="form-control form-select col-md-12" [(ngModel)]="donation.paymentmode">
+                    <select name="paymentmode" class="form-control form-select col-md-12"
+                        [(ngModel)]="donation.paymentmode">
                         <option selected>Choose payment mode here</option>
-                        <option *ngFor="let paymentmode of paymentmode">{{ paymentmode}}</option>
+                        <option *ngFor="let paymentmode of paymentmode">{{paymentmode}}</option>
                     </select>
                 </div>
                 <br>
                 <div class="form-group">
                     <label>Amount</label>
                     <input class="form-control" required pattern="^[0-9]$" #amount="ngModel" name="amount" type="text"
-                        [(ngModel)]="donation.amount">
+                        [(ngModel)]="donation.amount" [class.is-invalid]="amount.invalid && amount.touched">
                     <small class="text-danger" [class.d-none]='amount.valid || amount.untouched'>Amount is required and
                         enter only digit
                     </small>
