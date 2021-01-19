@@ -13,16 +13,15 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { AdminhomepageComponent } from './adminhomepage/adminhomepage.component';
 import { UserlistComponent } from './adminhomepage/userlist/userlist.component';
 import { BooklistComponent } from './adminhomepage/booklist/booklist.component';
-import { FeedbacklistComponent } from './adminhomepage/feedbacklist/feedbacklist.component';
 import { UpdatebookComponent } from './homepage/updatebook/updatebook.component';
 import { CreativityComponent } from './homepage/creativity/creativity.component';
 import { CreativitygalleryComponent } from './homepage/creativitygallery/creativitygallery.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeheaderComponent } from './homeheader/homeheader.component';
-//import { UploadbookComponent } from './homepage/uploadbook/uploadbook.component';
+import { UploadbookComponent } from './homepage/uploadbook/uploadbook.component';
 import { DonationComponent } from './homepage/donation/donation.component';
-
+import { ThankyouComponent } from './homepage/thankyou/thankyou.component';
+import { InnerheaderComponent } from './homepage/innerheader/innerheader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,15 +33,15 @@ import { DonationComponent } from './homepage/donation/donation.component';
     AdminhomepageComponent,
     UserlistComponent,
     BooklistComponent,
-    FeedbacklistComponent,
     UpdatebookComponent,
     CreativityComponent,
     CreativitygalleryComponent,
     HeaderComponent,
     FooterComponent,
-    HomeheaderComponent,
-    // UploadbookComponent,
+    UploadbookComponent,
     DonationComponent,
+    ThankyouComponent,
+    InnerheaderComponent,
   ],
   imports: [
     BrowserModule,

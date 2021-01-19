@@ -1,257 +1,66 @@
-<app-homeheader></app-homeheader>
-<div class="px-4 px-lg-0">
-      <div class="container text-danger py-5 text-center">
+<app-innerheader></app-innerheader>
+<div class="container-fluid">
+      <div class="row">
+            <div class="col-md-3"></div>
 
+            <div class="col-md-8 ">
+                  <form class="form-inline mr-auto mb-4 mt-2">
+                        <input class="form-control col-md-8  seracharea" type="text" placeholder="Search"
+                              aria-label="Search">
+                        <button class="btn btn-indigo btn-rounded btn-sm my-0 waves-effect waves-light btn1"
+                              type="submit">Search</button>
+                  </form>
+            </div>
+            <div class="col-md-2 "></div>
 
-            <h1 class="display-4">Sharecare Book Store List</h1>
-            <p class="lead mb-0">Choose Your Favourite Book </p>
       </div>
-      <div class="pb-5">
-            <div class="container">
-                  <div class="row">
-                        <div class="col-lg-12 p-2 bg-white rounded shadow-sm mb-5">
-                              <!-- Shopping cart table -->
-                              <div class="table-responsive">
-                                    <table class="table">
-                                          <thead>
-                                                <tr>
-                                                      <th scope="col" class="border-0 bg-light">
-                                                            <div class="p-2 px-3 text-uppercase">Books</div>
-                                                      </th>
-                                                      <th scope="col" class="border-0 bg-light">
-                                                            <div class="py-2 text-uppercase">Pages</div>
-                                                      </th>
-                                                      <th scope="col" class="border-0 bg-light">
-                                                            <div class="py-2 text-uppercase">Category</div>
-                                                      </th>
-                                                      <th scope="col" class="border-0 bg-light">
-                                                            <div class="py-2 text-uppercase">Add</div>
-                                                      </th>
-                                                </tr>
-                                          </thead>
-                                          <tbody>
-                                                <tr>
-                                                      <th scope="row" class="border-0">
-                                                            <div class="p-2">
-                                                                  <img src="assets/images/1.png" alt="" width="70"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                                  <div class="ml-3 d-inline-block align-middle">
-                                                                        <h5 class="mb-0"> <a href="#"
-                                                                                    class="text-dark d-inline-block align-middle">Harry
-                                                                                    Porter</a></h5><span
-                                                                              class="text-muted font-weight-normal font-italic d-block">Author:J
-                                                                              K Rowling</span>
+      <div class="row d-flex">
+            <div class="col-sm-3">
+                  <!-- Category -->
+                  <div class="single category">
+                        <h3 class="side-title">Category</h3>
+                        <ul class="list-unstyled">
+                              <li><a href="" title="">Mysteries </a></li>
+                              <li><a href="" title="">Romance</a></li>
+                              <li><a href="" title="">Thrillers</a></li>
+                              <li><a href="" title="">Science Fiction</a></li>
+                              <li><a href="" title="">Fantasy</a></li>
+                              <li><a href="" title="">Historical Fiction</a></li>
 
-                                                                  </div>
-                                                            </div>
-                                                      </th>
-                                                      <td class="border-0 align-middle"><strong>100</strong></td>
-                                                      <td class="border-0 align-middle"><strong>Fictional</strong></td>
-                                                      <td class="border-0 align-middle"><a href="#"
-                                                                  class="btn btn-primary">Add to Cart</a></td>
-                                                      <td class="border-0 align-middle"><a href="#" class="text-dark"><i
-                                                                        class="fa fa-trash"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                      <th scope="row">
-                                                            <div class="p-2">
-                                                                  <img src="assets/images/2.png" alt="" width="70"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                                  <div class="ml-3 d-inline-block align-middle">
-                                                                        <h5 class="mb-0"><a href="#"
-                                                                                    class="text-dark d-inline-block">Two
-                                                                                    Lives</a></h5><span
-                                                                              class="text-muted font-weight-normal font-italic">Author:
-                                                                              Vikram seth</span>
-                                                                  </div>
-                                                            </div>
-                                                      </th>
-                                                      <td class="align-middle"><strong>120</strong></td>
-                                                      <td class="align-middle"><strong>Non-Fictional</strong></td>
-                                                      <td class="border-0 align-middle"><a href="#"
-                                                                  class="btn btn-primary">Add to Cart</a></td>
-                                                      <td class="align-middle"><a href="#" class="text-dark"><i
-                                                                        class="fa fa-trash"></i></a>
-                                                      </td>
-                                                </tr>
-                                                <tr>
-                                                      <th scope="row">
-                                                            <div class="p-2">
-                                                                  <img src="assets/images/3.png" alt="" width="70"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                                  <div class="ml-3 d-inline-block align-middle">
-                                                                        <h5 class="mb-0"><a href="#"
-                                                                                    class="text-dark d-inline-block">Sridevi</a>
-                                                                        </h5><span
-                                                                              class="text-muted font-weight-normal font-italic">Author:
-                                                                              Satayrtha Nayak</span>
-                                                                  </div>
-                                                            </div>
-                                                      </th>
-                                                      <td class="align-middle"><strong>150</strong></td>
-                                                      <td class="align-middle"><strong>Non-Fictional</strong></td>
-                                                      <td class="border-0 align-middle"><a href="#"
-                                                                  class="btn btn-primary">Add to Cart</a></td>
-                                                      <td class="align-middle"><a href="#" class="text-dark"><i
-                                                                        class="fa fa-trash"></i></a>
-                                                      </td>
-                                                </tr>
-                                                <tr>
-                                                      <th scope="row">
-                                                            <div class="p-2">
-                                                                  <img src="assets/images/4.png" alt="" width="70"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                                  <div class="ml-3 d-inline-block align-middle">
-                                                                        <h5 class="mb-0"> <a href="#"
-                                                                                    class="text-dark d-inline-block">Half
-                                                                                    Girlfriend</a></h5><span
-                                                                              class="text-muted font-weight-normal font-italic">Author:
-                                                                              Chetan Bhagat</span>
-                                                                  </div>
-                                                            </div>
-                                                      <td class="align-middle"><strong>130</strong></td>
-                                                      <td class="align-middle"><strong>Comic</strong></td>
-                                                      <td class="border-0 align-middle"><a href="#"
-                                                                  class="btn btn-primary">Add to Cart</a></td>
-                                                      <td class="align-middle"><a href="#" class="text-dark"><i
-                                                                        class="fa fa-trash"></i></a>
-                                                      </td>
-                                                </tr>
-                                                <tr>
-                                                      <th scope="row">
-                                                            <div class="p-2">
-                                                                  <img src="assets/images/5.png" alt="" width="70"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                                  <div class="ml-3 d-inline-block align-middle">
-                                                                        <h5 class="mb-0"> <a href="#"
-                                                                                    class="text-dark d-inline-block">At
-                                                                                    the going down of the sun</a></h5>
-                                                                        <span
-                                                                              class="text-muted font-weight-normal font-italic">Author:
-                                                                              Marius oelschig</span>
-                                                                  </div>
-                                                            </div>
-                                                      <td class="align-middle"><strong>170</strong></td>
-                                                      <td class="align-middle"><strong>Fictional</strong></td>
-                                                      <td class="border-0 align-middle"><a href="#"
-                                                                  class="btn btn-primary">Add to Cart</a></td>
-                                                      <td class="align-middle"><a href="#" class="text-dark"><i
-                                                                        class="fa fa-trash"></i></a>
-                                                      </td>
-                                                </tr>
-                                                <tr>
-                                                      <th scope="row">
-                                                            <div class="p-2">
-                                                                  <img src="assets/images/11.jpg" alt="" width="70"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                                  <div class="ml-3 d-inline-block align-middle">
-                                                                        <h5 class="mb-0"> <a href="#"
-                                                                                    class="text-dark d-inline-block">The
-                                                                                    book of chaos</a></h5><span
-                                                                              class="text-muted font-weight-normal font-italic">Author:
-                                                                              Jessica Renwick</span>
-                                                                  </div>
-                                                            </div>
-                                                      <td class="align-middle"><strong>140</strong></td>
-                                                      <td class="align-middle"><strong>Horror</strong></td>
-                                                      <td class="border-0 align-middle"><a href="#"
-                                                                  class="btn btn-primary">Add to Cart</a></td>
-                                                      <td class="align-middle"><a href="#" class="text-dark"><i
-                                                                        class="fa fa-trash"></i></a>
-                                                      </td>
-                                                </tr>
-                                                <tr>
-                                                      <th scope="row">
-                                                            <div class="p-2">
-                                                                  <img src="assets/images/22.jpg" alt="" width="70"
-                                                                        class="img-fluid rounded shadow-sm">
-                                                                  <div class="ml-3 d-inline-block align-middle">
-                                                                        <h5 class="mb-0"> <a href="#"
-                                                                                    class="text-dark d-inline-block">The
-                                                                                    king of drugs</a></h5><span
-                                                                              class="text-muted font-weight-normal font-italic">Author:
-                                                                              Nora Barrett</span>
-                                                                  </div>
-                                                            </div>
-                                                      <td class="align-middle"><strong>150</strong></td>
-                                                      <td class="align-middle"><strong>Non-Fictional</strong></td>
-                                                      <td class="border-0 align-middle"><a href="#"
-                                                                  class="btn btn-primary">Add to Cart</a></td>
-                                                      <td class="align-middle"><a href="#" class="text-dark"><i
-                                                                        class="fa fa-trash"></i></a>
-                                                      </td>
-                                                </tr>
-                                          </tbody>
-                                    </table>
-                              </div>
-                              <!-- End -->
-                        </div>
+                        </ul>
                   </div>
+            </div>
+            <div class="col-sm-9">
+                  <table class="table table-striped">
+                        <thead>
+                              <tr>
+                                    <th scope="col">Book Title</th>
+                                    <th scope="col">Book Author</th>
+                                    <th scope="col">Total Pages</th>
+                                    <th scope="col">Book Description</th>
+                                    <th scope="col">Book Category</th>
+                                    <th scope="col"></th>
 
-                  <div class="row py-5 p-4 bg-white rounded shadow-sm">
-                        <div class="col-lg-6">
-                              <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Book Category
-                              </div>
-                              <div class="p-4">
-                                    <p class="font-italic mb-4">Search Books as per Category</p>
-                                    <div class="input-group mb-4 border rounded-pill p-2">
-                                          <input type="text" placeholder="Category" aria-describedby="button-addon3"
-                                                class="form-control border-0">
-                                          <div class="input-group-append border-0">
-                                                <button id="button-addon3" type="button"
-                                                      class="btn btn-dark px-4 rounded-pill"><i
-                                                            class="fa fa-gift mr-2"></i>Search</button>
-                                          </div>
-                                    </div>
-                              </div>
-                              <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Instructions
-                                    for Admin</div>
-                              <div class="p-4">
-                                    <p class="font-italic mb-4">If you have some information for the Admin you can leave
-                                          them in the box below</p>
-                                    <textarea name="" cols="30" rows="2" class="form-control"></textarea>
-                              </div>
-                        </div>
-                        <div class="col-lg-6">
-                              <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary
-                              </div>
-                              <div class="p-4">
-                                    <p class="font-italic mb-4">Order Number</p>
-                                    <ul class="list-unstyled mb-4">
-                                          <li class="d-flex justify-content-between py-3 border-bottom"><strong
-                                                      class="text-muted">Order
-                                                      Id</strong><strong>10003459695854</strong></li>
-                                          <li class="d-flex justify-content-between py-3 border-bottom"><strong
-                                                      class="text-muted">Address</strong><strong>Mumbai</strong></li>
-                                          <li class="d-flex justify-content-between py-3 border-bottom"><strong
-                                                      class="text-muted">Order Date</strong><strong>31/01/2021</strong>
-                                          </li>
-                                          <li class="d-flex justify-content-between py-3 border-bottom"><strong
-                                                      class="text-muted">Total Quantity of Books</strong>
-                                                <h5 class="font-weight-bold">3</h5>
-                                          </li>
-                                    </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Procceed to
-                                          checkout</a>
-                              </div>
-                        </div>
-                  </div>
+                              </tr>
+                        </thead>
 
+
+                        <tbody *ngFor="let book of allbook">
+                              <tr>
+                                    <td>{{book.bookTitle}}</td>
+                                    <td>{{book.bookAuthor}}</td>
+                                    <td>{{book.noOfPages}}</td>
+                                    <td>{{book.bookDescription}}</td>
+                                    <td>{{book.categoryName}}</td>
+                                    <td><button class="btn btn-primary">Add To Cart</button></td>
+
+                              </tr>
+
+                        </tbody>
+                  </table>
             </div>
       </div>
 </div>
-
-
-<!-- Footer -->
-<footer class="page-footer font-small blue">
-
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2021 Copyright:Sharecare Book Store
-
-      </div>
-      <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
 
 
 <router-outlet></router-outlet>

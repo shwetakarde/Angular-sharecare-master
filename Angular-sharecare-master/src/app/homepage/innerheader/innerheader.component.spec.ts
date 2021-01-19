@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FeedbacklistComponent } from './feedbacklist.component';
+import { InnerheaderComponent } from './innerheader.component';
 
-describe('FeedbacklistComponent', () => {
-  let component: FeedbacklistComponent;
-  let fixture: ComponentFixture<FeedbacklistComponent>;
+describe('InnerheaderComponent', () => {
+  let component: InnerheaderComponent;
+  let fixture: ComponentFixture<InnerheaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FeedbacklistComponent ]
+      declarations: [ InnerheaderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FeedbacklistComponent);
+    fixture = TestBed.createComponent(InnerheaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

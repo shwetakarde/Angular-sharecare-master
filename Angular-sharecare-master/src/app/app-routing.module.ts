@@ -10,6 +10,7 @@ import { UserlistComponent } from './adminhomepage/userlist/userlist.component';
 import { CreativityComponent } from './homepage/creativity/creativity.component';
 import { CreativitygalleryComponent } from './homepage/creativitygallery/creativitygallery.component';
 import { DonationComponent } from './homepage/donation/donation.component';
+import { ThankyouComponent } from './homepage/thankyou/thankyou.component';
 const routes: Routes = [
   { path: '', redirectTo: '/indexpage', pathMatch: 'full' },
   { path: 'homepage', component: HomepageComponent },
@@ -26,7 +27,8 @@ const routes: Routes = [
   },
 
   { path: 'creativitygallery', component: CreativitygalleryComponent },
-  { path: 'donation', component: DonationComponent }
+  { path: 'donation', component: DonationComponent },
+  { path: 'thankyou', component: ThankyouComponent }
 ];
 
 @NgModule({

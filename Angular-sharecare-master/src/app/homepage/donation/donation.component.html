@@ -1,3 +1,5 @@
+<app-innerheader></app-innerheader>
+
 <div class="container col-md-4">
     <div class="form-sec">
         <h3>Donate Us</h3>
@@ -31,15 +33,15 @@
                 <br>
                 <div class="form-group">
                     <label>Amount</label>
-                    <input class="form-control" required pattern="^[0-9]$" #amount="ngModel" name="amount" type="text"
-                        [(ngModel)]="donation.amount" [class.is-invalid]="amount.invalid && amount.touched">
-                    <small class="text-danger" [class.d-none]='amount.valid || amount.untouched'>Amount is required and
-                        enter only digit
-                    </small>
+                    <input class="form-control" required pattern="^[0-9]*$" #amount="ngModel" name="amount" type="text"
+                        [(ngModel)]="donation.amount">
+                    <!-- <small class="text-danger" [class.d-none]='amount.valid || amount.untouched'>Amount is required and
+                        enter only digit 
+                    </small>-->
                 </div>
                 <br>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-danger">Submit</button>
+                    <button type="submit" class="btn btn-danger" [disabled]="donateusForm.invalid">Submit</button>
                 </div>
             </form>
         </div>

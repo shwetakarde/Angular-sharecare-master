@@ -1,0 +1,64 @@
+.logo h2{
+    color:rgb(4, 61, 47);
+ font-weight: bolder;
+ padding-top: 15px;
+ font-size: 30px;
+ font-family: 'Fraunces', serif;
+  width: 100%; float: left; 
+  text-shadow: 2px 2px 4px #fffbfb;
+}
+
+.collapse ul li{
+    font-family: 'Fraunces', serif;;
+    font-weight: bold;
+    padding-left: 1.6%;
+    font-size: 1.2rem;
+    
+}
+ .navbar-toggler {
+    color: rgba(175, 238, 2, 0.5);
+    border-color: rgba(226, 19, 19, 0.842);
+}
+.navbar-toggler-icon{
+    display: inline-block;
+    color: peru;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+}
+.navbarmain{
+    background-color: rgb(41, 148, 107);
+    color:orange;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+        
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
+  .nav-link{
+      color: rgb(250, 244, 244);
+  }
+  .collapse  ul li .active {
+      font-weight: 900;
+
+  }
+  .nav-link:hover{
+      color:rgb(68, 68, 68)
+  } 
+@media only screen and (max-width: 600px) {
+    .logo h2{
+       font-size: 20px;
+    }
+
+
+
+
+
+}

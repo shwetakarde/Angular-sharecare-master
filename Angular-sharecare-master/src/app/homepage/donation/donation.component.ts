@@ -21,7 +21,7 @@ export class DonationComponent implements OnInit {
     this._service.addDonate(this.donation).subscribe(
       data => {
         console.log("response received");
-        this._router.navigate(['/homepage'])
+        this._router.navigate(['/thankyou'])
 
       },
       error => {
