@@ -9,20 +9,16 @@ import { Admin } from './admin';
 export class RegistrationService {
 
   constructor(private _http: HttpClient) { }
-
+  public baseurl = "http://localhost:8081/";
   public loginAdminFromRemote(admin: Admin): Observable<any> {
-    return this._http.post<any>("http://localhost:8081/adminlogin", admin)
+    return this._http.post<any>(this.baseurl + "adminlogin", admin)
   }
 
   public loginUserFromRemote(user: User): Observable<any> {
-    return this._http.post<any>("http://localhost:8081/login", user)
+    return this._http.post<any>(this.baseurl + "login", user)
   }
 
   public registerUserFromRemote(user: User): Observable<any> {
-    return this._http.post<any>("http://localhost:8081/registeruser", user)
+    return this._http.post<any>(this.baseurl + "registeruser", user)
   }
-
-
-
-
 }

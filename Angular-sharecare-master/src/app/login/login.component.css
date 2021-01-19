@@ -1,0 +1,42 @@
+.header_main{
+	width: 100%;
+	float: left;
+	background-image: url(src/assets/images/banner.png);
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-size:cover;
+	background-size: 100%;
+    background-repeat: no-repeat;
+}
+.heading-s{
+font-family: 'Fraunces', serif;
+font-weight: bold;
+padding-left: 130px;
+padding-top: 5%;
+}
+.container{
+    background: rgba(18, 27, 18, 0.3);
+    margin-top: 5%;
+ }
+.field{
+    font-family: 'Fraunces', serif;
+ font-weight: bold;
+ font-size: 20px;
+}
+p{
+    padding-bottom: 5%;
+}
+form{
+    padding-left: 5%;
+}
+.btn{
+    font-family: 'Fraunces', serif;
+    
+}
+.btn1{
+    
+   
+    margin-left: 10%;
+    background-color: rgb(21, 32, 32);
+}

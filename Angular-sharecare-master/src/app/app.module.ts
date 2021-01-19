@@ -17,7 +17,11 @@ import { FeedbacklistComponent } from './adminhomepage/feedbacklist/feedbacklist
 import { UpdatebookComponent } from './homepage/updatebook/updatebook.component';
 import { CreativityComponent } from './homepage/creativity/creativity.component';
 import { CreativitygalleryComponent } from './homepage/creativitygallery/creativitygallery.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeheaderComponent } from './homeheader/homeheader.component';
 //import { UploadbookComponent } from './homepage/uploadbook/uploadbook.component';
+import { DonationComponent } from './homepage/donation/donation.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { CreativitygalleryComponent } from './homepage/creativitygallery/creativ
     UpdatebookComponent,
     CreativityComponent,
     CreativitygalleryComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeheaderComponent,
     // UploadbookComponent,
+    DonationComponent,
   ],
   imports: [
     BrowserModule,

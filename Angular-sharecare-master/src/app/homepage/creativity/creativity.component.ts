@@ -15,7 +15,10 @@ export class CreativityComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   artisticModel = new Artistic('');
+
+
   addCreativity() {
     this._service.addCreativity(this.artisticModel).subscribe(
       data => {
