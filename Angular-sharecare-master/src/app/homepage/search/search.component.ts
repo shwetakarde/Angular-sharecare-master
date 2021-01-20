@@ -18,8 +18,7 @@ export class SearchComponent implements OnInit {
   bookTitle: string;
 
   public getBookByTitle() {
-    let resp = this._Service.getBookByTitle(this.bookTitle);
-    resp.subscribe((data) => this.books = data);
+    this._Service.getBookByTitle(this.bookTitle).subscribe((data) => this.books = data);
   }
 
 

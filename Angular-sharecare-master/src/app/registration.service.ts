@@ -22,4 +22,9 @@ export class RegistrationService {
   public registerUserFromRemote(user: User): Observable<any> {
     return this._http.post<any>(this.baseurl + "registeruser", user)
   }
+
+  public sendResetEmail(user: User): Observable<any> {
+    return this._http.post(this.baseurl + "userlinkmail", user)
+  }
+
 }

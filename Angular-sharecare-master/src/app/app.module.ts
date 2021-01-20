@@ -25,6 +25,8 @@ import { InnerheaderComponent } from './homepage/innerheader/innerheader.compone
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchComponent } from './homepage/search/search.component';
 import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { ResetPassMailComponent } from './reset-pass-mail/reset-pass-mail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +49,8 @@ import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
     InnerheaderComponent,
     SearchComponent,
     MyprofileComponent,
+    ForgotpasswordComponent,
+    ResetPassMailComponent,
   ],
   imports: [
     BrowserModule,

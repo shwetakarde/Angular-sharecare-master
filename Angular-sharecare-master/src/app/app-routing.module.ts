@@ -14,6 +14,9 @@ import { ThankyouComponent } from './homepage/thankyou/thankyou.component';
 import { UploadbookComponent } from './homepage/uploadbook/uploadbook.component';
 import { UpdatebookComponent } from './homepage/updatebook/updatebook.component';
 import { SearchComponent } from './homepage/search/search.component';
+import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { ResetPassMailComponent } from './reset-pass-mail/reset-pass-mail.component';
 
 
 const routes: Routes = [
@@ -35,7 +38,10 @@ const routes: Routes = [
   { path: 'donation', component: DonationComponent },
   { path: 'thankyou', component: ThankyouComponent },
   { path: 'uploadbook', component: UploadbookComponent },
-  { path: 'search', component: SearchComponent }
+  { path: 'search', component: SearchComponent },
+  { path: 'myprofile', component: MyprofileComponent },
+  { path: 'forgotpassword', component: ForgotpasswordComponent },
+  { path: 'resetpassemail', component: ResetPassMailComponent },
 ];
 
 @NgModule({

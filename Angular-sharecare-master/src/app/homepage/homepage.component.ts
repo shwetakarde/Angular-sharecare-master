@@ -31,4 +31,11 @@ export class HomepageComponent implements OnInit {
   }
 
 
+  books: any;
+  bookTitle: string;
+
+  public getBookByTitle() {
+    this._Service.getBookByTitle(this.bookTitle).subscribe((data) => this.allbook = data);
+  }
+
 }
