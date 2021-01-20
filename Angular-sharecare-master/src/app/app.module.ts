@@ -22,6 +22,9 @@ import { UploadbookComponent } from './homepage/uploadbook/uploadbook.component'
 import { DonationComponent } from './homepage/donation/donation.component';
 import { ThankyouComponent } from './homepage/thankyou/thankyou.component';
 import { InnerheaderComponent } from './homepage/innerheader/innerheader.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchComponent } from './homepage/search/search.component';
+import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,12 +45,15 @@ import { InnerheaderComponent } from './homepage/innerheader/innerheader.compone
     DonationComponent,
     ThankyouComponent,
     InnerheaderComponent,
+    SearchComponent,
+    MyprofileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

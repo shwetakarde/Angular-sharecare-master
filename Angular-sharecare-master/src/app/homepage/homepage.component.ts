@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Book } from '../book';
 import { BookService } from '../book.service';
 @Component({
@@ -9,7 +9,7 @@ import { BookService } from '../book.service';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor(private _Service: BookService, private _router: Router) { }
+  constructor(private _Service: BookService, private _router: Router, private _activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.getAllBook();
@@ -28,6 +28,7 @@ export class HomepageComponent implements OnInit {
       error => {
         console.log("Exception occured");
       })
-
   }
+
+
 }

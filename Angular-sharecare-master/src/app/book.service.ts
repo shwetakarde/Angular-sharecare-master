@@ -15,4 +15,13 @@ export class BookService {
     return this._http.get(this.baseurl + "booklist");
   }
 
+  public uploadBook(book: Book): Observable<any> {
+    return this._http.post<any>(this.baseurl + "addBook", book)
+  }
+
+
+  public getBookByTitle(bookTitle) {
+    return this._http.get(this.baseurl + "getBook/" + bookTitle);
+  }
+
 }
