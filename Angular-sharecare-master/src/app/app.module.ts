@@ -26,7 +26,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchComponent } from './homepage/search/search.component';
 import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
-import { ResetPassMailComponent } from './reset-pass-mail/reset-pass-mail.component';
+import { LogoutComponent } from './logout/logout.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +51,8 @@ import { ResetPassMailComponent } from './reset-pass-mail/reset-pass-mail.compon
     SearchComponent,
     MyprofileComponent,
     ForgotpasswordComponent,
-    ResetPassMailComponent,
+    LogoutComponent,
+
   ],
   imports: [
     BrowserModule,

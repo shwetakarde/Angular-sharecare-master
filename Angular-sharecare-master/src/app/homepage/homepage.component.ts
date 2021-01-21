@@ -12,6 +12,9 @@ export class HomepageComponent implements OnInit {
   constructor(private _Service: BookService, private _router: Router, private _activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    if (!sessionStorage.getItem('id')) {
+      this._router.navigate(['/login']);
+    }
     this.getAllBook();
   }
 

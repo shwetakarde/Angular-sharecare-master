@@ -15,9 +15,7 @@ import { UploadbookComponent } from './homepage/uploadbook/uploadbook.component'
 import { UpdatebookComponent } from './homepage/updatebook/updatebook.component';
 import { SearchComponent } from './homepage/search/search.component';
 import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
-import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
-import { ResetPassMailComponent } from './reset-pass-mail/reset-pass-mail.component';
-
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/indexpage', pathMatch: 'full' },
@@ -40,8 +38,8 @@ const routes: Routes = [
   { path: 'uploadbook', component: UploadbookComponent },
   { path: 'search', component: SearchComponent },
   { path: 'myprofile', component: MyprofileComponent },
-  { path: 'forgotpassword', component: ForgotpasswordComponent },
-  { path: 'resetpassemail', component: ResetPassMailComponent },
+  { path: 'logout', component: LogoutComponent },
+
 ];
 
 @NgModule({

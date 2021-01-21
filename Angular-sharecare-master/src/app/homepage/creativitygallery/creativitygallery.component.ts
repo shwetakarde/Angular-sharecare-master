@@ -17,6 +17,9 @@ export class CreativitygalleryComponent implements OnInit {
 
   public allcreativity;
   ngOnInit(): void {
+    if (!sessionStorage.getItem('id')) {
+      this._router.navigate(['/login']);
+    }
     this.getAllCreativity();
 
   }

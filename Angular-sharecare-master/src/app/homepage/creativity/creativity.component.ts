@@ -14,6 +14,9 @@ export class CreativityComponent implements OnInit {
   constructor(private _service: ArtisticService, private _router: Router) { }
 
   ngOnInit(): void {
+    if (!sessionStorage.getItem('id')) {
+      this._router.navigate(['/login']);
+    }
   }
 
   artisticModel = new Artistic('');

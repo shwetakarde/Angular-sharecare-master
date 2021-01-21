@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
   constructor(private _service: RegistrationService, private _router: Router) { }
 
   ngOnInit(): void {
+    sessionStorage.removeItem('User');
   }
 
   loginUser() {
@@ -30,11 +31,12 @@ export class LoginComponent implements OnInit {
     else {
       this._service.loginUserFromRemote(this.user).subscribe(
         data => {
-          // sessionStorage.setItem('userSesId', data.userSesId);
+          sessionStorage.setItem('id', data.id);
+
           console.log(data);
           console.log("response received");
-          this._router.navigate(['/homepage'])
 
+          this._router.navigate(['/homepage']);
         },
         error => {
           console.log("exception occured");
@@ -43,6 +45,8 @@ export class LoginComponent implements OnInit {
       )
     }
   }
+
+
 
   // registration() {
   //   this._router.navigate(['/registration'])

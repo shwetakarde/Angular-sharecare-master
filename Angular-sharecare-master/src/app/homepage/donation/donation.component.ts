@@ -13,6 +13,9 @@ export class DonationComponent implements OnInit {
   constructor(private _service: ContactusService, private _router: Router) { }
 
   ngOnInit(): void {
+    if (!sessionStorage.getItem('id')) {
+      this._router.navigate(['/login']);
+    }
   }
   paymentmode = ['Net Banking', 'Debit Card', 'Credit Card'];
   donation = new Donation('', '', '', 1000);

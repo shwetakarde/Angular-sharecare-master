@@ -14,9 +14,16 @@ export class MyprofileComponent implements OnInit {
 
   user = new User();
   ngOnInit(): void {
-
+    if (!sessionStorage.getItem('id')) {
+      this._router.navigate(['/login']);
+    }
+    let id = parseInt(sessionStorage.getItem('id'));
+    this._service.getUser(id).subscribe(user => {
+      this.user = user;
+    })
 
   }
+
 
 
 

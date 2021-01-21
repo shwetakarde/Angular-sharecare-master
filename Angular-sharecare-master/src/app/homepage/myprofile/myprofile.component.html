@@ -1,17 +1,15 @@
-<div class="container col-md-4">
+<!-- <div class="container col-md-4">
       <div class="form-sec">
             <h3 style="color: blue;">Edit Profile</h3>
             <div class="mx-auto">
                   <form>
-                        <!-- {{bookModel |json}} -->
+                      
                         <div class="form-group">
                               <label>First Name</label>
                               <input type="text" class="form-control" name="firstName" [(ngModel)]="user.firstName"
                                     required pattern="^[a-zA-Z_]+$" #firstName="ngModel"
                                     [class.is-invalid]="firstName.invalid && firstName.touched">
-                              <!-- <p>
-                                    {{user.id}}
-                              </p> -->
+                            
 
                         </div>
                         <div class="form-group">
@@ -19,10 +17,7 @@
                               <input type="text" class="form-control" name="lastName" [(ngModel)]="user.lastName"
                                     required pattern="^[a-zA-Z_]+$" #lastName="ngModel"
                                     [class.is-invalid]="lastName.invalid && lastName.touched">
-                              <!-- <p>
-                                          {{user.email}}
-                              </p> -->
-
+                            
                         </div>
                         <div class="form-group">
                               <label>Email</label>
@@ -53,4 +48,17 @@
                   </form>
             </div>
       </div>
+</div> -->
+<app-innerheader></app-innerheader>
+<div *ngIf="user">
+      <h3>Hello {{user.firstName}}</h3>
+      <!-- <input type=" text" First Name :{{user.firstName}}> -->
+      First Name: {{user.firstName}}
+      Last Name :{{user.lastName}}
+      Email :{{user.email}}
+      Contact No: {{user.phoneNo}}
+</div>
+
+<div>
+      <button class="btn btn-primary">Edit Profile</button>
 </div>

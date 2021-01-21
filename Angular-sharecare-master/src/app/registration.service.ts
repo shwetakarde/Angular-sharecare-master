@@ -23,8 +23,9 @@ export class RegistrationService {
     return this._http.post<any>(this.baseurl + "registeruser", user)
   }
 
-  public sendResetEmail(user: User): Observable<any> {
-    return this._http.post(this.baseurl + "userlinkmail", user)
+  public getUser(id: Number): Observable<User> {
+    return this._http.get<any>(this.baseurl + 'myprofile/' + id);
   }
+
 
 }

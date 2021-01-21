@@ -12,6 +12,9 @@ export class SearchComponent implements OnInit {
   constructor(private _router: Router, private _Service: BookService) { }
 
   ngOnInit(): void {
+    if (!sessionStorage.getItem('id')) {
+      this._router.navigate(['/login']);
+    }
   }
 
   books: any;

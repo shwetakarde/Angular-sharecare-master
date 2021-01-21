@@ -13,6 +13,9 @@ export class UploadbookComponent implements OnInit {
   constructor(private _Service: BookService, private _router: Router) { }
 
   ngOnInit(): void {
+    if (!sessionStorage.getItem('id')) {
+      this._router.navigate(['/login']);
+    }
   }
 
   book = new Book();
