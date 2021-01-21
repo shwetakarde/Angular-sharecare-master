@@ -16,6 +16,7 @@ import { UpdatebookComponent } from './homepage/updatebook/updatebook.component'
 import { SearchComponent } from './homepage/search/search.component';
 import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
 import { LogoutComponent } from './logout/logout.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/indexpage', pathMatch: 'full' },
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'search', component: SearchComponent },
   { path: 'myprofile', component: MyprofileComponent },
   { path: 'logout', component: LogoutComponent },
+  { path: 'forgotpassword', component: ForgotpasswordComponent },
 
 ];
 

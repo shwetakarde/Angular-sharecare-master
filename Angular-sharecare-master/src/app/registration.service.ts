@@ -28,4 +28,15 @@ export class RegistrationService {
   }
 
 
+  sendEmail(email: User): Observable<User> {
+    return this._http.post<User>(`${this.baseurl + "sendKeyByEmail"}`, email);
+  }
+
+  public getUserByEmail(email: String): Observable<User> {
+    return this._http.get<User>(this.baseurl + "getUserByEmail/" + email);
+  }
+
+  public updateUser(id: Number, user: User): Observable<User> {
+    return this._http.put<User>(`${this.baseurl + "updateUser"}/${id}`, user);
+  }
 }
