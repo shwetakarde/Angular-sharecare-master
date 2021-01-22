@@ -41,4 +41,9 @@ export class HomepageComponent implements OnInit {
     this._Service.getBookByTitle(this.bookTitle).subscribe((data) => this.allbook = data);
   }
 
+
+  addDetails(bookId: number) {
+    this._router.navigate(['cart', bookId]);
+  }
+
 }

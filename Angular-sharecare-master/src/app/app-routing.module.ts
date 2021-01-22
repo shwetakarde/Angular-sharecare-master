@@ -17,6 +17,7 @@ import { SearchComponent } from './homepage/search/search.component';
 import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { CartComponent } from './homepage/cart/cart.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/indexpage', pathMatch: 'full' },
@@ -41,7 +42,7 @@ const routes: Routes = [
   { path: 'myprofile', component: MyprofileComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'forgotpassword', component: ForgotpasswordComponent },
-
+  { path: 'cart/:bookId', component: CartComponent }
 ];
 
 @NgModule({

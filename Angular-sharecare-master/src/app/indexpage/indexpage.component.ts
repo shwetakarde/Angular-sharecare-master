@@ -15,10 +15,10 @@ export class IndexpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  contactusModel = new Contactus();
+  contactusmodel = new Contactus();
 
   contactus() {
-    this._service.addContactus(this.contactusModel).subscribe(
+    this._service.addContactus(this.contactusmodel).subscribe(
       data => {
         console.log("response received");
         this._router.navigate(['/indexpage'])

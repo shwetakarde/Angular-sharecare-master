@@ -13,8 +13,8 @@ export class ContactusService {
   constructor(private _http: HttpClient) { }
 
   public baseurl = "http://localhost:8081/";
-  public addContactus(contactusModel: Contactus): Observable<any> {
-    return this._http.post<any>(this.baseurl + "contactus", contactusModel)
+  public addContactus(contactusmodel: Contactus): Observable<any> {
+    return this._http.post<any>(this.baseurl + "contactus", contactusmodel)
   }
 
   public addDonate(donation: Donation): Observable<any> {

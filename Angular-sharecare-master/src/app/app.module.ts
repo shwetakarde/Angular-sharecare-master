@@ -27,6 +27,7 @@ import { SearchComponent } from './homepage/search/search.component';
 import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { LogoutComponent } from './logout/logout.component';
+import { CartComponent } from './homepage/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { LogoutComponent } from './logout/logout.component';
     MyprofileComponent,
     ForgotpasswordComponent,
     LogoutComponent,
+    CartComponent,
 
   ],
   imports: [

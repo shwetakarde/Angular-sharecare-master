@@ -1,23 +1,16 @@
-/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
 
 
-/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');
 
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Yusei+Magic&display=swap');
-/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+/***---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
- ----------------------------------------*****/
+ ----------------------------------------***/
  
  @import url('https://fonts.googleapis.com/css2?family=Fraunces&family=Poppins:wght@500&family=Yusei+Magic&display=swap');
  
-
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
      box-sizing: border-box !important;
@@ -150,13 +143,13 @@ a {
 	background-size: 100%;
     background-repeat: no-repeat;
 }
-/*menu bar*/
+/* menu bar */
 
 
 
 
 .web_text{ 
-    width: 100%; float: left; font-size: 48px; padding-top: 160px;font-family: 'Fraunces', serif;}
+    width: 100%; float: left; font-size: 40px; padding-top: 160px;font-family: 'Fraunces', serif;}
 .margin-top-20{ margin-top: 20px; }
 
 .donec_text{
@@ -167,6 +160,9 @@ a {
     z-index: 9;
     position: relative;
 }
+/* .dolar_tetx{
+
+} */
 
 .bannen_inner{
 	width: 100%;
@@ -290,16 +286,24 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
     font-family: 'Fraunces', serif
 
 }
-
-.totaly_text{
-		width: 100%;
-	float: left;
-	text-align: center;
-	margin-top: 20px;	
-	color: #000;
-    font-family: 'Fraunces', serif
-
+.totaly_text {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    color: #000;
 }
+.totally_text{
+		width: 100%;
+	
+	text-align: justify;
+	margin-top: 160px;	
+	color: rgb(164, 255, 228);
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.3)
+}
+
 
 .making_tetx{
 	width: 100%;
@@ -411,11 +415,12 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 }
 
 .about_inner{
-	width: 100%;
+    width: 350px;
+    height: 200px;
 	float: left;
 	margin-top: 0px;
 	margin-bottom: 0px;	
-	background-color: #ffffff;
+	
 	border-radius: 20px;
     border: 2px solid #55b994;
 }
@@ -430,6 +435,8 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 
 
 }
+
+
 
 .justo_text{
 	width: 100%;
@@ -474,7 +481,7 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 .contact_section_2{
 	width: 100%;
 	float: left;
-	background-image: url(/assets/images/contact-bg.png);
+	background-image: url(src/assets/images/contact-bg.png);
 	height: auto;
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -509,13 +516,15 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
     border-radius: 10px;
     margin-top: 6px;
 }
-
+.msg1{
+    width: 100%;
+}
 .massage-bt {
     background: #ececec;
     border: none;
     color: #000;
-    width: 100%;
-    height: 145px;
+    width: 200px;
+    height: px;
     font-size: 22px;
     padding: 20px;
     border-radius: 10px;
@@ -542,16 +551,25 @@ button.main_bt a:hover {
 	margin: 0 auto;
 	text-align: center;
 }
+@media only screen and (max-width: 600px) {
+.dolar_tetx{
+     font-size: 25px;
+	float: left;
+}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 1085px) {
+.about_inner{
+    width: 200px;
+    height: 200px;
+	
+}
+}
+@media (max-width: 991px) and (min-width: 768px){
+.totally_text {
+    font-size: 12px;
+}.about_inner{
+    width: 150px;
+    height: 150px;
+}
+}

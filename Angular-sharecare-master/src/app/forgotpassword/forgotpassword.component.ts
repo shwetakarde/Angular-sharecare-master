@@ -37,7 +37,6 @@ export class ForgotpasswordComponent implements OnInit {
 
     let opass = (<HTMLInputElement>document.getElementById('password')).value;
     this.newpass = (<HTMLInputElement>document.getElementById('newpass')).value;
-    // this.mailId = sessionStorage.getItem('sid');
     this._service.getUserByEmail(this.user.email).subscribe(data => {
       this.user = data;
       console.log("after obj " + this.user.firstName);
