@@ -11,9 +11,13 @@ export class AdminhomepageComponent implements OnInit {
   constructor(private _router: Router) { }
 
   ngOnInit(): void {
-    // if (!sessionStorage.getItem('id')) {
+    // if (!sessionStorage.getItem('email')) {
     //   this._router.navigate(['/login']);
     // }
   }
 
+  onlogout() {
+    sessionStorage.removeItem('id');
+    this._router.navigate(['/indexpage']);
+  }
 }

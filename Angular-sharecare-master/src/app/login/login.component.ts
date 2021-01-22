@@ -25,8 +25,7 @@ export class LoginComponent implements OnInit {
   loginUser() {
 
     if (this.user.email == "admin@gmail.com" && this.user.password == "admin") {
-      // sessionStorage.setItem('id', 'true');
-
+      //sessionStorage.setItem('email', this.user.email);
       this._router.navigate(['/adminhomepage'])
 
     }
