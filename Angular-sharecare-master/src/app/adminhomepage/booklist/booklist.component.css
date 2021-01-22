@@ -1,0 +1,23 @@
+.btn1{
+      margin-left: 2%;
+      background-color: lightcoral;
+      font-weight: bold;
+      font-family: 'Fraunces', serif;;
+      font-size: 18px;
+  }
+  .btn1:hover{
+      background-color: rgb(155, 127, 127);
+      color: lightgoldenrodyellow;
+  }
+ 
+  .list-unstyled{
+      font-family: 'Fraunces', serif;
+      font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .btn1{
+       font-size: 10px;
+    }
+  }
+  

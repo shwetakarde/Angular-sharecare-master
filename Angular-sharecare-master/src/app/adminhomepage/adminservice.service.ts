@@ -19,4 +19,8 @@ export class AdminserviceService {
     return this._http.delete(this.baseurl + "deleteUser" + "/" + id);
   }
 
+  public getdonation(): Observable<any> {
+    return this._http.get(this.baseurl + "donationlist");
+  }
+
 }

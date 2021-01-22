@@ -28,6 +28,10 @@ import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { LogoutComponent } from './logout/logout.component';
 import { CartComponent } from './homepage/cart/cart.component';
+import { AddressComponent } from './homepage/address/address.component';
+import { FinalComponent } from './homepage/final/final.component';
+import { CreativitylistComponent } from './adminhomepage/creativitylist/creativitylist.component';
+import { DonationlistComponent } from './adminhomepage/donationlist/donationlist.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +58,10 @@ import { CartComponent } from './homepage/cart/cart.component';
     ForgotpasswordComponent,
     LogoutComponent,
     CartComponent,
+    AddressComponent,
+    FinalComponent,
+    CreativitylistComponent,
+    DonationlistComponent,
 
   ],
   imports: [

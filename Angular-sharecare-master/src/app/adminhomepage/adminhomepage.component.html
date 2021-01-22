@@ -14,9 +14,6 @@
 </nav>
  -->
 
-
-
-
 <body>
       <div class="bs-example">
             <nav class="navbar navbar-expand-md navbar-light bg-dark">
@@ -30,12 +27,15 @@
                   <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav  ">
                               <a [routerLink]="['/adminhomepage/userlist']" routerLinkActive="active"
-                                    class="nav-item nav-link text-light col-3  " style="font-size: 20px;">User
+                                    class="nav-item nav-link text-light  " style="font-size: 20px;">User
                                     List </a>
-                              <a class="nav-item nav-link text-light col-3 " href="#" style="font-size: 20px;">Book
+                              <a [routerLink]="['/adminhomepage/booklist']" routerLinkActive="active"
+                                    class="nav-item nav-link text-light " style="font-size: 20px;">Book
                                     List</a>
-                              <a class="nav-item nav-link text-light col-12 " href="#" style="font-size: 20px;">User
-                                    Messages</a>
+                              <a class="nav-item nav-link text-light " [routerLink]="['/adminhomepage/creativitylist']"
+                                    routerLinkActive="active" style="font-size: 20px;">Creativity Gallery</a>
+                              <a class="nav-item nav-link text-light  " [routerLink]="['/adminhomepage/donationlist']"
+                                    routerLinkActive="active" style="font-size: 20px;">Donation List</a>
                               <a class="nav-item nav-link text-light " style="text-align: right;" href="#"
                                     style="font-size: 20px;">Logout</a>
                         </div>

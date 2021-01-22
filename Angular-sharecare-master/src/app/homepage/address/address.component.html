@@ -1,0 +1,49 @@
+<app-innerheader></app-innerheader>
+
+<div class="container col-md-4">
+      <div class="form-sec">
+            <h3>Address</h3>
+            <div class="mx-auto">
+                  <form #addressForm="ngForm" (ngSubmit)="addAddress()">
+                        <div class="form-group">
+                              <label>House No</label>
+                              <input type="text" #houseNo="ngModel" [(ngModel)]="address.houseNo" class="form-control "
+                                    placeholder="Enter house No" name="houseNo">
+
+                        </div>
+                        <br>
+                        <div class="form-group ">
+                              <label>Landmark</label>
+                              <input class="form-control " #landmark="ngModel" name="landmark"
+                                    [(ngModel)]="address.landmark" placeholder="Enter Landmark">
+
+                        </div>
+                        <br>
+                        <div class="form-group ">
+                              <label>City</label>
+                              <input class="form-control " #city="ngModel" name="city" [(ngModel)]="address.city"
+                                    placeholder="Enter city">
+
+                        </div>
+                        <br>
+                        <div class="form-group ">
+                              <label>State</label>
+                              <input class="form-control " #state="ngModel" name="state" [(ngModel)]="address.state"
+                                    placeholder="Enter state">
+
+                        </div>
+                        <br>
+                        <div class="form-group ">
+                              <label>Pincode</label>
+                              <input class="form-control " #pincode="ngModel" name="pincode"
+                                    [(ngModel)]="address.pincode" placeholder="Enter Pincode">
+
+                        </div>
+                        <div class="form-group">
+                              <button type="submit" class="btn btn-danger"
+                                    [disabled]="addressForm.invalid">Submit</button>
+                        </div>
+                  </form>
+            </div>
+      </div>
+</div>

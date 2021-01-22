@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Book } from '../book';
 import { BookService } from '../book.service';
+import { Cart } from '../cart';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -45,5 +46,19 @@ export class HomepageComponent implements OnInit {
   addDetails(bookId: number) {
     this._router.navigate(['cart', bookId]);
   }
+
+
+
+  // addToCart(book: Book) {
+  //   let cart = new Cart();
+  //   cart.bookId = book.bookId;
+  //   cart.id = parseInt(sessionStorage.getItem('id'));
+  //   cart.bookTitle = book.bookTitle;
+  //   cart.bookAuthor=book.
+  //   this._Service.addToCart(cart).subscribe(data => {
+  //     console.log(data);
+  //   })
+  // }
+
 
 }

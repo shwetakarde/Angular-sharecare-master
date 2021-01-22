@@ -1,0 +1,23 @@
+<div class="container col-md-4 ">
+      <h2>Creativity Gallery</h2>
+      <div *ngFor="let creativity of allcreativity ">
+            <blockquote class="quote-box">
+                  <p class="quotation-mark">
+                        “
+                  </p>
+                  <p class="quote-text">
+                        {{creativity.content}}
+                  </p>
+                  <span class="quotation-mark1">
+                        ”
+                  </span>
+                  <hr>
+                  <div class="blog-post-actions">
+
+                        <p class="blog-post-bottom pull-right">
+                              <span class="badge quote-badge"></span> Sharecare bookstore ❤
+                        </p>
+                  </div>
+            </blockquote>
+      </div>
+</div>

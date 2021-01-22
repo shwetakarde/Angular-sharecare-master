@@ -18,6 +18,12 @@ import { MyprofileComponent } from './homepage/myprofile/myprofile.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 import { CartComponent } from './homepage/cart/cart.component';
+import { AddressComponent } from './homepage/address/address.component';
+import { FinalComponent } from './homepage/final/final.component';
+import { BooklistComponent } from './adminhomepage/booklist/booklist.component';
+import { CreativitylistComponent } from './adminhomepage/creativitylist/creativitylist.component';
+import { DonationlistComponent } from './adminhomepage/donationlist/donationlist.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/indexpage', pathMatch: 'full' },
@@ -30,9 +36,19 @@ const routes: Routes = [
   {
     path: 'adminhomepage', component: AdminhomepageComponent,
     children: [
-      { path: 'userlist', component: UserlistComponent }
+      { path: 'userlist', component: UserlistComponent },
+      { path: 'booklist', component: BooklistComponent },
+      { path: 'creativitylist', component: CreativitylistComponent },
+      { path: 'donationlist', component: DonationlistComponent },
+
     ]
   },
+  // {
+  //   path: 'adminhomepage', component: AdminhomepageComponent,
+  //   children: [
+  //     { path: 'booklist', component: BooklistComponent }
+  //   ]
+  // },
 
   { path: 'creativitygallery', component: CreativitygalleryComponent },
   { path: 'donation', component: DonationComponent },
@@ -42,7 +58,10 @@ const routes: Routes = [
   { path: 'myprofile', component: MyprofileComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'forgotpassword', component: ForgotpasswordComponent },
-  { path: 'cart/:bookId', component: CartComponent }
+  { path: 'cart/:bookId', component: CartComponent },
+  { path: 'address', component: AddressComponent },
+  { path: 'final', component: FinalComponent },
+
 ];
 
 @NgModule({
