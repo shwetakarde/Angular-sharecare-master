@@ -1,4 +1,104 @@
-.signup-container{
+/* .signup-container{
+      margin-top: 5%;
+      margin-bottom: 5%;
+      
+  }
+  .signup-form-1{
+      padding: 1px;
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  }
+  .signup-form-1 h3{
+      text-align: center;
+      color: #333;
+  }
+  .signup-form-2{
+      padding: 0px;
+      background: rgba(165, 42, 42, 0.829);
+      box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  }
+  .signup-form-2 h3{
+      text-align: center;
+      color: #fff;
+      margin-top: 5%;
+  }
+  .signup-container form{
+      padding: 5%;
+  }
+  .btnSubmit
+  {
+      width: 50%;
+      border-radius: 1rem;
+      padding: 1.5%;
+      border: none;
+      cursor: pointer;
+  }
+  .signup-form-1 .btnSubmit{
+      font-weight: 600;
+      color: #fff;
+      background-color: rgba(165, 42, 42, 0.829);
+  }
+  .signup-form-2 .btnSubmit{
+      font-weight: 600;
+      color: rgba(165, 42, 42, 0.829);
+      background-color: #fff;
+  } */
+  /* .signup-form-2 .ForgetPwd{
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+  }
+  .signup-form-1 .ForgetPwd{
+      color: rgba(165, 42, 42, 0.829);
+      font-weight: 600;
+      text-decoration: none;
+  }
+  
+  .social-login{
+      width:390px;
+      margin:0 auto;
+      margin-bottom: 14px;
+  }
+   .social-btn{
+      font-weight: 100;
+      color:white;
+      width:190px;
+      font-size: 0.9rem;
+  }
+  .social-login{
+      width:210px !important;
+      margin: 0 auto;
+  } */
+   /* .facebook-btn{  background-color: rgba(165, 42, 42, 0.829); }
+   .google-btn{ background-color: #DF4B3B; } */
+
+
+   /* new */
+   .header_main{
+	width: 100%;
+	float: left;
+	background-image: url(src/assets/images/banner.png);
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-size:cover;
+	background-size: 100%;
+    background-repeat: no-repeat;
+}
+.heading-s{
+font-family: 'Fraunces', serif;
+font-weight: bold;
+padding-left: 130px;
+padding-top: 5%;
+}
+a{
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+}
+
+.container{
+    background: rgba(141, 143, 5, 0.3);
+    margin-top: 5%;
+ }.signup-container{
       margin-top: 5%;
       margin-bottom: 5%;
       
@@ -42,31 +142,25 @@
       color: rgba(165, 42, 42, 0.829);
       background-color: #fff;
   }
-  /* .signup-form-2 .ForgetPwd{
-      color: #fff;
-      font-weight: 600;
-      text-decoration: none;
-  }
-  .signup-form-1 .ForgetPwd{
-      color: rgba(165, 42, 42, 0.829);
-      font-weight: 600;
-      text-decoration: none;
-  }
-  
-  .social-login{
-      width:390px;
-      margin:0 auto;
-      margin-bottom: 14px;
-  }
-   .social-btn{
-      font-weight: 100;
-      color:white;
-      width:190px;
-      font-size: 0.9rem;
-  }
-  .social-login{
-      width:210px !important;
-      margin: 0 auto;
-  } */
-   /* .facebook-btn{  background-color: rgba(165, 42, 42, 0.829); }
-   .google-btn{ background-color: #DF4B3B; } */
+  .btn{
+    font-family: 'Fraunces', serif;
+    background-color: rgb(21, 32, 32);
+}
+.btn1{
+    
+   
+    margin-left: 10%;
+    background-color: rgb(21, 32, 32);
+}
+.form-group{
+    font-family: 'Fraunces', serif;
+}
+label{
+    font-weight: bold;
+}
+.heading-s{
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    padding-left: 160px;
+    padding-top: 5%;
+    }

@@ -23,6 +23,8 @@ import { FinalComponent } from './homepage/final/final.component';
 import { BooklistComponent } from './adminhomepage/booklist/booklist.component';
 import { CreativitylistComponent } from './adminhomepage/creativitylist/creativitylist.component';
 import { DonationlistComponent } from './adminhomepage/donationlist/donationlist.component';
+import { InnerfooterComponent } from './homepage/innerfooter/innerfooter.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 
 const routes: Routes = [
@@ -61,7 +63,8 @@ const routes: Routes = [
   { path: 'cart/:bookId', component: CartComponent },
   { path: 'address', component: AddressComponent },
   { path: 'final', component: FinalComponent },
-
+  { path: 'innerfooter', component: InnerfooterComponent },
+  { path: '**', component: ErrorpageComponent }
 ];
 
 @NgModule({

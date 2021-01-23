@@ -32,7 +32,8 @@ import { AddressComponent } from './homepage/address/address.component';
 import { FinalComponent } from './homepage/final/final.component';
 import { CreativitylistComponent } from './adminhomepage/creativitylist/creativitylist.component';
 import { DonationlistComponent } from './adminhomepage/donationlist/donationlist.component';
-
+import { InnerfooterComponent } from './homepage/innerfooter/innerfooter.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +63,8 @@ import { DonationlistComponent } from './adminhomepage/donationlist/donationlist
     FinalComponent,
     CreativitylistComponent,
     DonationlistComponent,
+    InnerfooterComponent,
+    ErrorpageComponent,
 
   ],
   imports: [

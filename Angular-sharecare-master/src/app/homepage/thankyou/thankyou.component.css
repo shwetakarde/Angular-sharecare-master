@@ -1,0 +1,20 @@
+.container{
+      background-image: url('src/assets/images/banner.png');
+  background-size: cover;
+      padding-top: 200px ;
+      padding-bottom: 90px;
+      font-family: 'Fraunces', serif;
+      
+    
+  }
+  .display-3{
+      color: rgb(3, 63, 63);
+  }
+  .lead{
+      color:black
+  }
+  .linkus{
+      font-weight: bold;
+      color: rgb(3, 63, 63);
+      font-size:20px;
+  }
