@@ -5,5 +5,6 @@ export class Book {
       noOfPages: Number;
       bookDescription: String;
       categoryName: String;
+      adminApproval: String;
 
 }

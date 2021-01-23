@@ -39,4 +39,10 @@ export class RegistrationService {
   public updateUser(id: Number, user: User): Observable<User> {
     return this._http.put<User>(`${this.baseurl + "updateUser"}/${id}`, user);
   }
+
+  // getCurrentData(id) {
+  //   return this._http.get(this.baseurl + "")
+  // }
+
+
 }

@@ -25,10 +25,10 @@ import { CreativitylistComponent } from './adminhomepage/creativitylist/creativi
 import { DonationlistComponent } from './adminhomepage/donationlist/donationlist.component';
 import { InnerfooterComponent } from './homepage/innerfooter/innerfooter.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
-
+import { EditprofileComponent } from './homepage/editprofile/editprofile.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/indexpage', pathMatch: 'full' },
+  { path: '', redirectTo: 'indexpage', pathMatch: 'full' },
   { path: 'homepage', component: HomepageComponent },
   { path: 'creativity', component: CreativityComponent },
   { path: 'registration', component: RegistrationComponent },
@@ -51,7 +51,7 @@ const routes: Routes = [
   //     { path: 'booklist', component: BooklistComponent }
   //   ]
   // },
-
+  { path: 'editprofile/:id', component: EditprofileComponent },
   { path: 'creativitygallery', component: CreativitygalleryComponent },
   { path: 'donation', component: DonationComponent },
   { path: 'thankyou', component: ThankyouComponent },

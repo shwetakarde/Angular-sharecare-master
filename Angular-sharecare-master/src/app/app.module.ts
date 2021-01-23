@@ -34,6 +34,7 @@ import { CreativitylistComponent } from './adminhomepage/creativitylist/creativi
 import { DonationlistComponent } from './adminhomepage/donationlist/donationlist.component';
 import { InnerfooterComponent } from './homepage/innerfooter/innerfooter.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { EditprofileComponent } from './homepage/editprofile/editprofile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,6 +66,7 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
     DonationlistComponent,
     InnerfooterComponent,
     ErrorpageComponent,
+    EditprofileComponent,
 
   ],
   imports: [

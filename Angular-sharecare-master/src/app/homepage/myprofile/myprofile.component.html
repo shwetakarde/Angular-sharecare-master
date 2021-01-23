@@ -50,15 +50,27 @@
       </div>
 </div> -->
 <app-innerheader></app-innerheader>
+<!-- <div *ngIf="user">
+      <h3>Hello {{user.firstName}}</h3>
+      <input type=" text" First Name :{{user.firstName}}>
+First Name: {{user.firstName}}
+Last Name :{{user.lastName}}
+Email :{{user.email}}
+Contact No: {{user.phoneNo}}
+
+</div> -->
+
 <div *ngIf="user">
       <h3>Hello {{user.firstName}}</h3>
       <!-- <input type=" text" First Name :{{user.firstName}}> -->
-      First Name: {{user.firstName}}
-      Last Name :{{user.lastName}}
-      Email :{{user.email}}
+      First Name: {{user.firstName}}<br>
+      Last Name :{{user.lastName}}<br>
+      Email :{{user.email}}<br>
       Contact No: {{user.phoneNo}}
+
 </div>
 
 <div>
-      <button class="btn btn-primary">Edit Profile</button>
+      <a href="/editprofile/{{user.id}}">Edit
+            Profile</a>
 </div>

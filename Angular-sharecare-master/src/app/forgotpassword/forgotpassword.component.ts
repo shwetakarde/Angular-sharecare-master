@@ -11,48 +11,66 @@ import { User } from '../user';
 export class ForgotpasswordComponent implements OnInit {
 
   constructor(private _service: RegistrationService, private _router: Router) { }
-
+  isVisible: boolean = false;
   ngOnInit(): void {
   }
   user = new User();
   mailId: string;
   newpass: string;
-
+  newpassword: string;
 
   onsubmit() {
-    // this.mailId = sessionStorage.getItem('sid');
-    this.user.email = (<HTMLInputElement>document.getElementById('email')).value;
-    console.log(this.user.email);
+    try {
 
-
-    this._service.sendEmail(this.user).subscribe(data => {
-      // this.router.navigate(['custrespass']);
-      this.user = data;
-    },
-      error => console.log(error)
-    );
+      this._service.sendEmail(this.user).subscribe(data => {
+        // this.router.navigate(['custrespass']);
+        this.user = data;
+        this.isVisible = true;
+      },
+        error => {
+          console.log(error);
+          this.isVisible = false;
+        }
+      );
+    } catch (error) {
+      this.isVisible = false;
+    }
   }
 
   changepass() {
+    try {
+      this._service.getUserByEmail(this.user.email).subscribe(data => {
+        this.user = data;
+        //        console.log(this.user);
 
-    let opass = (<HTMLInputElement>document.getElementById('password')).value;
-    this.newpass = (<HTMLInputElement>document.getElementById('newpass')).value;
-    this._service.getUserByEmail(this.user.email).subscribe(data => {
-      this.user = data;
-      console.log("after obj " + this.user.firstName);
+      }, error => { console.log(error) }
+      );
+    } catch (error) {
+      console.log(error);
+    }
 
-      if (opass === this.user.password) {
-        console.log("pass matched==================" + this.user.password);
-        this.user.password = this.newpass;
 
+  }
+
+  updatePassword() {
+    try {
+
+
+
+      if (this.user.otp == this.user.password) {
+        this.user.password = this.newpassword;
         this._service.updateUser(this.user.id, this.user).subscribe(data => {
-
           this._router.navigate(['/login']);
-        }, error => console.log(error));
-      }
 
-    }, error => console.log(error)
-    );
+        }, error => {
+          console.log(error)
+        });
+      } else {
+
+      }
+    } catch (error) {
+      console.log(error);
+    }
 
   }
 }

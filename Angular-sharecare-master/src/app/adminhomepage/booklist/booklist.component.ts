@@ -20,9 +20,8 @@ export class BooklistComponent implements OnInit {
 
   book = new Book();
   public allbook;
-
   getAllBook() {
-    this._Service.getAllBook().subscribe(
+    this._Service.getAllAdminBook().subscribe(
       (data) => {
         this.allbook = data
         console.log(this.allbook);
@@ -44,6 +43,13 @@ export class BooklistComponent implements OnInit {
 
   addDetails(bookId: number) {
     this._router.navigate(['cart', bookId]);
+  }
+
+  approveBook(id, book) {
+    this._Service.approveBookById(id).subscribe(data => {
+      console.log(data);
+    })
+    location.reload();
   }
 
 }

@@ -15,6 +15,10 @@ export class BookService {
   public getAllBook(): Observable<any> {
     return this._http.get(this.baseurl + "booklist");
   }
+  public getAllAdminBook(): Observable<any> {
+    return this._http.get(this.baseurl + "adminbooklist");
+  }
+
 
   public uploadBook(book: Book): Observable<any> {
     return this._http.post<any>(this.baseurl + "addBook", book)
@@ -36,6 +40,9 @@ export class BookService {
 
   getCartById(id: number): Observable<Cart[]> {
     return this._http.get<Cart[]>(this.baseurl + "showCart/" + id);
+  }
+  approveBookById(id: number): Observable<any> {
+    return this._http.post<any>(this.baseurl + "approveBook", id);
   }
 
 }

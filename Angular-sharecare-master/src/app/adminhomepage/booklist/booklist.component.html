@@ -60,6 +60,11 @@
                                     <td>{{book.bookDescription}}</td>
 
                                     <td><button class="btn btn-danger">Delete</button></td>
+                                    <td><button *ngIf="book.adminApproval==='N'" class="btn btn-danger"
+                                                (click)="approveBook(book.bookId)">Approve</button>
+                                          <button *ngIf="book.adminApproval==='Y'" class="btn btn-success"
+                                                (click)="approveBook(book.bookId)">Approved</button>
+                                    </td>
 
                               </tr>
 
